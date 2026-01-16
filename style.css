@@ -2,8 +2,8 @@
 :root{
   --bg:#121212;
   --text:#f0f0f0;
-  --link:#f6f6f6;
-  --muted:rgba(240,240,240,.55);
+  --link:#f6f6f6;              /* slightly brighter than --text */
+  --muted:rgba(240,240,240,.55); /* recessed but same hue family */
   --hairline:rgba(240,240,240,.20);
   --shadow:rgba(0,0,0,.55);
 }
@@ -48,7 +48,7 @@ body{
   line-height:1.05;
 }
 
-.header p{
+.header h3{
   margin:12px 0 0;
   font-weight:500;
   letter-spacing:.14em;
@@ -78,29 +78,25 @@ p:last-child{margin-bottom:0}
   border-top:1px solid var(--hairline);
   font-size:12px;
   letter-spacing:.06em;
-  color:var(--muted);
   display:flex;
   flex-wrap:wrap;
   gap:10px;
+  align-items:baseline;
 }
 
-/* Footer Link Styling */
-.footer a {
-  color: var(--link);
-  text-decoration: none;
-  transition: opacity 0.2s;
+.footer a{
+  color:var(--link);
+  text-decoration:none;
 }
 
-.footer a:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 4px;
+.footer a:hover{
+  text-decoration:underline;
+  text-decoration-thickness:1px;
+  text-underline-offset:4px;
 }
 
-/* Copyright text */
-.footer .copyright {
-  color: var(--muted);
-  font-weight: 300;
+.footer .copyright{
+  color:var(--muted);
 }
 
 /* tasteful responsiveness */
