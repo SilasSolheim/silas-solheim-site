@@ -3,7 +3,7 @@
   --bg:#121212;
   --text:#f0f0f0;
   --muted:rgba(240,240,240,.72);
-  --hairline:rgba(240,240,240,.14);
+  --hairline:rgba(240,240,240,.20);
   --shadow:rgba(0,0,0,.55);
 }
 
@@ -28,7 +28,7 @@ body{
 }
 
 .card{
-  width:min(720px, 100%);
+  width:min(580px, 100%);
   padding:34px 32px 26px;
   border:1px solid var(--hairline);
   border-radius:18px;
