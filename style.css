@@ -105,81 +105,72 @@ p:last-child{margin-bottom:0}
   .footer{line-height:1.5}
 }
 
-/* Newsletter Section */
-.update-section {
-    margin-top: 3rem;
-    text-align: center;
+/* Newsletter Section (card-aligned, compact) */
+.update-section{
+  margin-top: 1.4rem;          /* was 3rem */
+  text-align: left;            /* was centered */
 }
 
-.status-line {
-    font-weight: normal;
-    margin-bottom: 0.25rem;
+.status-line{
+  font-weight: normal;
+  margin: 0 0 0.35rem 0;
 }
 
-.sub-text {
-    opacity: 0.6;
-    font-size: 0.9em;
-    margin-bottom: 1.2rem;
+.sub-text{
+  opacity: 0.66;
+  font-size: 0.92em;
+  margin: 0 0 1rem 0;
 }
 
-/* Minimal Form */
-.clean-form {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    max-width: 380px;
-    margin: 0 auto;
+/* Minimal Form (aligned + less vertical weight) */
+.clean-form{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;  /* was center */
+  gap: 10px;
+  max-width: 520px;             /* was 380 */
+  margin: 0;                    /* was 0 auto */
 }
 
-.clean-form input[type="email"] {
-    background: transparent;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    padding: 6px 10px;
-    font-family: inherit;
-    font-size: 0.9rem;
-    color: inherit;
-    outline: none;
-    flex-grow: 1;
+.clean-form input[type="email"]{
+  flex: 1;
+  background: transparent;
+  border: 1px solid rgba(240,240,240,0.22);
+  border-radius: 10px;          /* was 3–4px (too UI-y) */
+  padding: 11px 12px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: #f0f0f0;
+  outline: none;
 }
 
-.clean-form input[type="email"]:focus {
-    border-color: #555;
+.clean-form input[type="email"]::placeholder{
+  color: rgba(240,240,240,0.48);
 }
 
-.clean-form button {
-    background: transparent;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    padding: 6px 14px;
-    font-family: inherit;
-    font-size: 0.9rem;
-    cursor: pointer;
-    color: inherit;
-    transition: all 0.2s ease;
+.clean-form input[type="email"]:focus{
+  border-color: rgba(240,240,240,0.55);
 }
 
-.clean-form button:hover {
-    border-color: #333;
-    background: rgba(0,0,0,0.05);
+.clean-form button{
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  border: 1px solid rgba(240,240,240,0.22);
+  background: transparent;
+  color: #f0f0f0;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease;
 }
 
-/* Update the input field to be transparent */
-.clean-form input[type="email"] {
-    background: transparent;      /* Removes the white block */
-    border: 1px solid rgba(255, 255, 255, 0.4); /* Subtle semi-transparent border */
-    color: #fff;                  /* White text when typing */
-    border-radius: 4px;           /* Slightly softer corners */
-    padding: 10px;
+.clean-form button:hover{
+  border-color: rgba(240,240,240,0.45);
+  background: rgba(240,240,240,0.06);
 }
 
-/* Style the placeholder text (e.g. "your@email.com") so it's readable but subtle */
-.clean-form input[type="email"]::placeholder {
-    color: rgba(255, 255, 255, 0.5);
-}
-
-/* Optional: Make the border light up slightly when clicked */
-.clean-form input[type="email"]:focus {
-    border-color: #fff;
-    outline: none;
+/* tasteful responsiveness */
+@media (max-width:520px){
+  .card{ padding: 28px 20px 22px; border-radius: 16px; }
+  .footer{ line-height: 1.5; }
+  .clean-form{ max-width: 100%; }
 }
