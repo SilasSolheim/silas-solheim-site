@@ -2,9 +2,9 @@
 
 Minimal, single-page author site built with vanilla HTML/CSS (no build step).
 
-**Live:** [add link]
+Live: https://silassolheim.com
 
-![Site preview](assets/preview.png)
+![Site preview](preview.png)
 
 ## Tech
 - HTML
