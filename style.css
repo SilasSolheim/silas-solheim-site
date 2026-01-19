@@ -8,9 +8,7 @@
 
 *{ box-sizing: border-box; }
 
-html, body{
-  height: 100%;
-}
+html, body{ height: 100%; }
 
 body{
   margin: 0;
@@ -26,13 +24,11 @@ body{
   padding: 34px 18px;
 }
 
-/* stack container */
 .stack{
   width: min(760px, 100%);
   position: relative;
 }
 
-/* shared card base */
 .card{
   background: rgba(18,18,18,0.72);
   border: 1px solid var(--line2);
@@ -41,24 +37,23 @@ body{
   backdrop-filter: blur(6px);
 }
 
-/* primary card */
 .card--primary{
   padding: 38px 52px;
   position: relative;
   z-index: 2;
 }
 
-/* join card: slightly offset under the primary (stack-of-cards) */
 .card--join{
-  padding: 16px 18px;
-  margin-top: 14px;
-  margin-left: 18px;  /* creates the “stack” slip */
-  margin-right: 6px;
-  z-index: 1;
-  opacity: 0.98;
+  width: min(560px, 100%);
+  padding: 14px 16px;
+  margin-top: 18px;
+  margin-left: 34px;
+  margin-right: auto;
+  border-color: rgba(240,240,240,0.12);
+  box-shadow: 0 14px 44px rgba(0,0,0,0.45);
+  opacity: 0.92;
 }
 
-/* typography */
 .header h1{
   font-family: "Playfair Display", serif;
   font-weight: 600;
@@ -83,7 +78,6 @@ body{
   color: rgba(240,240,240,0.90);
 }
 
-/* footer: split left/right */
 .footer{
   margin-top: 22px;
   padding-top: 14px;
@@ -111,45 +105,43 @@ body{
   color: rgba(240,240,240,0.75);
 }
 
-/* join card layout */
 .join-copy{
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   gap: 18px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .status-line{
   margin: 0;
-  font-size: 15px;
+  font-size: 14px;
   color: rgba(240,240,240,0.92);
   white-space: nowrap;
 }
 
 .sub-text{
   margin: 0;
-  font-size: 14px;
+  font-size: 13px;
   color: rgba(240,240,240,0.68);
   text-align: right;
-  max-width: 48ch;
+  max-width: 34ch;
 }
 
-/* join form: compact, no “white box” energy */
 .join-form{
   display: flex;
   align-items: center;
   gap: 10px;
-  max-width: 540px;
+  max-width: 420px;
 }
 
 .join-form input{
   flex: 1;
-  height: 40px;
-  padding: 10px 12px;
+  height: 36px;
+  padding: 8px 10px;
   border-radius: 12px;
   border: 1px solid rgba(240,240,240,0.22);
-  background: rgba(18,18,18,0.35);
+  background: rgba(18,18,18,0.18);
   color: var(--text);
   font-size: 14px;
   outline: none;
@@ -160,11 +152,11 @@ body{
 }
 
 .join-form button{
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   border-radius: 12px;
   border: 1px solid rgba(240,240,240,0.22);
-  background: rgba(18,18,18,0.35);
+  background: rgba(18,18,18,0.18);
   color: var(--text);
   cursor: pointer;
 }
@@ -173,15 +165,13 @@ body{
   border-color: rgba(240,240,240,0.38);
 }
 
-/* mobile: prevent “void” + keep stack readable */
 @media (max-width: 560px){
-  .card--primary{
-    padding: 30px 22px;
-  }
+  .card--primary{ padding: 30px 22px; }
 
   .card--join{
-    margin-left: 10px;
-    margin-right: 0;
+    width: 100%;
+    margin-left: 0;
+    opacity: 0.95;
   }
 
   .join-copy{
@@ -194,6 +184,8 @@ body{
     text-align: left;
     max-width: 100%;
   }
+
+  .join-form{ max-width: 100%; }
 
   .footer{
     flex-direction: column;
