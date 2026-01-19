@@ -14,7 +14,17 @@
     />
 
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- favicon set (v4) -->
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="icon" type="image/png" sizes="64x64" href="favicon-64.png" />
+    <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#121212" />
   </head>
 
   <body>
@@ -26,15 +36,24 @@
         </header>
 
         <div class="body">
-          <p>Silas Solheim writes high-concept thrillers with relentless pacing and a Southern gothic edge.</p>
-          <div class="update-section">
-              <p class="status-line">New work in progress.</p>
-              <p class="sub-text">Occasional notes. When there’s something worth saying.</p>
-              
-              <form action="https://buttondown.email/api/emails/embed-subscribe/YOUR-USERNAME" method="post" class="clean-form" target="_blank">
-                  <input type="email" name="email" placeholder="your@email.com" required />
-                  <button type="submit" aria-label="Subscribe"> → </button>
-              </form>
+          <p>
+            Silas Solheim writes high-concept thrillers with relentless pacing and a Southern gothic edge.
+          </p>
+
+          <div class="update-section" aria-label="Newsletter signup">
+            <p class="status-line">New work in progress.</p>
+            <p class="sub-text">Occasional notes. When there’s something worth saying.</p>
+
+            <!-- Buttondown embed: replace YOUR-USERNAME -->
+            <form
+              action="https://buttondown.email/api/emails/embed-subscribe/YOUR-USERNAME"
+              method="post"
+              class="clean-form"
+              target="_blank"
+            >
+              <input type="email" name="email" placeholder="your@email.com" required />
+              <button type="submit" aria-label="Subscribe">→</button>
+            </form>
           </div>
         </div>
 
