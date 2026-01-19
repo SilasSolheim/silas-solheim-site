@@ -163,3 +163,23 @@ p:last-child{margin-bottom:0}
     border-color: #333;
     background: rgba(0,0,0,0.05);
 }
+
+/* Update the input field to be transparent */
+.clean-form input[type="email"] {
+    background: transparent;      /* Removes the white block */
+    border: 1px solid rgba(255, 255, 255, 0.4); /* Subtle semi-transparent border */
+    color: #fff;                  /* White text when typing */
+    border-radius: 4px;           /* Slightly softer corners */
+    padding: 10px;
+}
+
+/* Style the placeholder text (e.g. "your@email.com") so it's readable but subtle */
+.clean-form input[type="email"]::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Optional: Make the border light up slightly when clicked */
+.clean-form input[type="email"]:focus {
+    border-color: #fff;
+    outline: none;
+}
