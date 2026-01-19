@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Playfair+Display:wght@600&amp;display=swap"
       rel="stylesheet"
     />
 
@@ -17,7 +17,7 @@
 
     <!-- favicon set (v4) -->
     <link rel="icon" href="favicon.ico" sizes="any" />
-    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="icon" type="image/png" sizes="64x64" href="favicon-64.png" />
     <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
@@ -39,28 +39,28 @@
           <p>
             Silas Solheim writes high-concept thrillers with relentless pacing and a Southern gothic edge.
           </p>
-
-          <div class="update-section" aria-label="Newsletter signup">
-            <p class="status-line">New work in progress.</p>
-            <p class="sub-text">Occasional notes. When there’s something worth saying.</p>
-
-            <!-- Buttondown embed: replace YOUR-USERNAME -->
-            <form
-              action="https://buttondown.email/api/emails/embed-subscribe/YOUR-USERNAME"
-              method="post"
-              class="clean-form"
-              target="_blank"
-            >
-              <input type="email" name="email" placeholder="your@email.com" required />
-              <button type="submit" aria-label="Subscribe">→</button>
-            </form>
-          </div>
         </div>
 
         <footer class="footer" aria-label="Contact and copyright">
-          <a href="mailto:inquiries@silassolheim.com">inquiries@silassolheim.com</a>
-          <span class="copyright">© 2026 Silas Solheim</span>
+          <a class="footer-left" href="mailto:inquiries@silassolheim.com">inquiries@silassolheim.com</a>
+          <span class="footer-right">© 2026 Silas Solheim</span>
         </footer>
+      </section>
+
+      <section class="join" aria-label="Newsletter signup">
+        <p class="join-title">New work in progress.</p>
+        <p class="join-sub">Occasional notes. When there’s something worth saying.</p>
+
+        <!-- Buttondown embed: replace YOUR-USERNAME -->
+        <form
+          action="https://buttondown.email/api/emails/embed-subscribe/YOUR-USERNAME"
+          method="post"
+          class="join-form"
+          target="_blank"
+        >
+          <input type="email" name="email" placeholder="your@email.com" required />
+          <button type="submit" aria-label="Subscribe">→</button>
+        </form>
       </section>
     </main>
   </body>
