@@ -3,49 +3,52 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Silas Solheim — Thriller & Speculative Fiction</title>
-  <meta name="description" content="Silas Solheim — Thriller & Speculative Fiction" />
+  <title>Silas Solheim — Thriller &amp; Speculative Fiction</title>
+  <meta name="description" content="Silas Solheim — Thriller &amp; Speculative Fiction" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Playfair+Display:wght@600&amp;display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="/style.css" />
 
-  <link rel="icon" href="favicon.ico" sizes="any" />
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png" />
-  <link rel="manifest" href="site.webmanifest" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png" />
+  <link rel="manifest" href="/site.webmanifest" />
   <meta name="theme-color" content="#121212" />
 </head>
 
 <body>
   <main class="wrap">
-    <section class="card">
-      <header>
+    <section class="card" aria-label="Author card">
+      <header class="header">
         <h1>SILAS SOLHEIM</h1>
-        <h2>THRILLER & SPECULATIVE FICTION</h2>
+        <h2>THRILLER &amp; SPECULATIVE FICTION</h2>
       </header>
 
       <p class="blurb">
         Silas Solheim writes high-concept thrillers with relentless pacing and a Southern gothic edge.
       </p>
 
-      <div class="join">
+      <section class="join" aria-label="Newsletter signup">
         <div class="join-copy">
-          <strong>New work in progress.</strong>
-          <span>Occasional notes. When there’s something worth saying.</span>
+          <p class="status"><strong>New work in progress.</strong></p>
+          <p class="note">Occasional notes. When there’s something worth saying.</p>
         </div>
 
-        <form action="https://buttondown.email/api/emails/embed-subscribe/YOUR-USERNAME" method="post" target="_blank">
-          <input type="email" name="email" placeholder="your@email.com" required />
-          <button type="submit" aria-label="Subscribe">→</button>
+        <form class="join-form" action="https://buttondown.email/api/emails/embed-subscribe/YOUR-USERNAME" method="post" target="_blank">
+          <label class="sr-only" for="email">Email</label>
+          <div class="field">
+            <input id="email" type="email" name="email" placeholder="your@email.com" autocomplete="email" required />
+            <button type="submit" aria-label="Subscribe">→</button>
+          </div>
         </form>
-      </div>
+      </section>
 
-      <footer>
+      <footer class="footer" aria-label="Contact and copyright">
         <a href="mailto:inquiries@silassolheim.com">inquiries@silassolheim.com</a>
         <span>© 2026 Silas Solheim</span>
       </footer>
