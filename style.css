@@ -174,3 +174,32 @@ p:last-child{margin-bottom:0}
   .footer{ line-height: 1.5; }
   .clean-form{ max-width: 100%; }
 }
+
+/* email row: smaller + tighter */
+.clean-form{
+  margin-top: 10px;
+  gap: 10px;
+  max-width: 520px;
+}
+
+.clean-form input[type="email"]{
+  padding: 10px 12px;
+  height: 42px;
+  line-height: 42px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.clean-form button{
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+.clean-form input[type="email"]::placeholder{
+  opacity: 0.65;
+}
+
+.sub-text{ margin-bottom: 10px; }
+.clean-form{ margin-top: 8px; }
